@@ -50,9 +50,9 @@ public class App {
 		
 		b = tmp;
 		
-		System.out.println("Affichage de " + a);
+		System.out.println("Affichage de a : " + a);
 		
-		System.out.println("Affichage de " + b);
+		System.out.println("Affichage de b : " + b);
 		
 	}
 
