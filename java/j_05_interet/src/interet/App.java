@@ -28,7 +28,9 @@ public class App {
 		
 		int i = 0;
 		
-		double resultat;
+		double resultatsimple;
+		
+		double resultatcompose;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -51,33 +53,13 @@ public class App {
 		
 		i = sc.nextInt();
 		
-		resultat = S * ( 1 + N * i );
+		resultatsimple = S * ( 1 + N * i ) / 100;
 		
-		System.out.println("L'intérêt est de " + resultat);
+		resultatcompose = Math.pow(S * ( 1 + i ), N) / 100;
 		
+		System.out.println("L'intérêt simple est de " + resultatsimple);
 		
-		// INTERET COMPOSE
-		System.out.println("Calcul d'un intérêt composé");
-		
-		System.out.println("Saisir la somme du compte en banque");
-		
-		S = sc.nextInt();
-		
-		System.out.println("Vous avez saisi : " + S);
-		
-		System.out.println("Saisir le nombre d'années");
-		
-		N = sc.nextInt();
-		
-		System.out.println("Vous avez saisi : " + N);
-		
-		System.out.println("Saisir l'intérêt");
-
-		i = sc.nextInt();
-		
-		resultat = Math.pow(S * ( 1 + i ), N);
-		
-		System.out.println("L'intérêt est de " + resultat);
+		System.out.println("L'intérêt composé est de " + resultatcompose);
 		
 		
 	}
