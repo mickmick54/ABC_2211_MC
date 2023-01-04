@@ -46,6 +46,8 @@ public class App {
 		
 		System.out.println("La surface de l'angle est " + aire );
 		
+		sc.close();
+		
 	}
 
 }

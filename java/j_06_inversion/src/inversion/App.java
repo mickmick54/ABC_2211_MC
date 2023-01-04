@@ -44,6 +44,10 @@ public class App {
 		
 		System.out.println("Vous avez saisi : " + b);
 		
+		System.out.println("Affichage de a : " + a);
+		
+		System.out.println("Affichage de b : " + b);
+		
 		tmp = a;
 		
 		a = b;

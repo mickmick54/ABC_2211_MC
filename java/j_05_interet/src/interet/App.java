@@ -53,15 +53,14 @@ public class App {
 		
 		i = sc.nextInt();
 		
-		resultatsimple = S * ( 1 + N * i ) / 100;
+		resultatsimple = S * ( 1 + N * i / 100d);
 		
-		resultatcompose = Math.pow(S * ( 1 + i ), N) / 100;
+		resultatcompose = S * Math.pow(( 1 + i / 100d), N);
 		
 		System.out.println("L'intérêt simple est de " + resultatsimple);
 		
 		System.out.println("L'intérêt composé est de " + resultatcompose);
-		
-		
+			
 	}
 
 }

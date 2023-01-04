@@ -34,7 +34,7 @@ public class App {
 			System.out.println("Vous êtes majeur");
 		} else if ( a < 1 ) {
 			System.out.println("Vous n'êtes pas encore né");
-		}  else {
+		} else {
 			System.out.println("Vous êtes mineur");
 		}
 		

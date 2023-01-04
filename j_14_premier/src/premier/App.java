@@ -27,7 +27,9 @@ public class App {
 				
 				System.out.println(n + " est un nombre premier");
 			}
-	  
+		
+		break;
+			
 	    }
 	}
 }
