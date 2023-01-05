@@ -28,9 +28,9 @@ public class App {
 	               System.out.println(i);
 
 	            }
-	  
 	        }
 		}
+		
+		sc.close();
 	}
-
 }
