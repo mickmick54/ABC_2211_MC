@@ -11,15 +11,17 @@ public class App {
 		
 		System.out.println("Donnez un nombre");
 		
-		int n = 0;
+		int n;
 		
-		int i = 0;
+		int reste;
 	
 		n = sc.nextInt();
 		
-		for (i = 2; i <= n-1; i++) {
+		for (int i = 2; i < n; i++) {
+			
+			reste = n % i;
 				
-			if (i / n <= 0) {
+			if (reste == 0) {
 				
 				System.out.println(n + " n'est pas un nombre premier");
 				
