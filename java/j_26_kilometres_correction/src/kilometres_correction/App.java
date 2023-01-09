@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		double m;
 		
@@ -28,7 +27,6 @@ public class App {
 		while (true) {
 			
 	        if (0.01 <= km && km <= 1000000) {
-	            // Le code pour traiter la distance va ici
 	        	
 	        	m = km * 0.621371;
 	        	
@@ -41,7 +39,7 @@ public class App {
 	            System.out.println("La distance doit être comprise entre 0.01 et 1 000 000");
 	            
 	            break;
-	        }
+	        } 
 		}
-	}
+	} 
 }
