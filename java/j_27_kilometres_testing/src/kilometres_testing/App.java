@@ -42,5 +42,7 @@ public class App {
 	                System.out.println("La distance doit être un nombre valide");
 	            }
 	        }
+	        
+	        sc.close();
 	    }
 }

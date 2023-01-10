@@ -51,8 +51,6 @@ public class App {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		
-		
 		while(!fermeture_prog)
 	    {
 	        System.out.println("Veuillez saisir une valeur en km comprise entre 0,01 et 1000000 :");
@@ -81,7 +79,8 @@ public class App {
 			            	
 			            }
 		        }
-		 }     
+		 } 
+		sc.close();
 	}
 }
 

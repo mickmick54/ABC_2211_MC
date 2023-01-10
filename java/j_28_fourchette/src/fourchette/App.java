@@ -50,5 +50,7 @@ public class App {
 	        	 chiffreMin = entree + 1;
 	         }
 	      }
+	      
+	      sc.close();
 	}
 }

@@ -32,5 +32,7 @@ public class App {
 		break;	// grosse erreure !!!
 		
 		}	
+		
+		sc.close();
 	}
 }

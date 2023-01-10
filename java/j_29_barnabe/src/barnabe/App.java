@@ -36,6 +36,8 @@ public class App {
 			solde = solde - (solde / 2 + 1);
 		}
 		
+		sc.close();
+		
         // affiche le nombre de magasins dans lesquels Barnabé a fait ses achats
         System.out.println("Barnabé a fait ses courses dans " + numMagasins + " magasins.");
 	}

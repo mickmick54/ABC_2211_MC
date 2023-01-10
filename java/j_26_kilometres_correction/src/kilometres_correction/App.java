@@ -41,5 +41,7 @@ public class App {
 	            break;
 	        } 
 		}
+		
+		sc.close();
 	} 
 }
