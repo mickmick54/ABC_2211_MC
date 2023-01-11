@@ -66,18 +66,19 @@ public class App {
 		        	
 		            km = Double.parseDouble(saisie_utilisateur);
 		            
-			            if(km < 0.01 || km > 1000000) {
-			            	
-			            	System.out.println("Veuillez saisir une valeur en km comprise entre 0,01 et 1000000 :");
-			            	
-			            	saisie_utilisateur = sc.nextLine();
-			            	
-			            } else {
-			            	miles = km/1.609;
-			            	
-			            	System.out.println(km + " kilomètres valent : "+ miles + " miles");
-			            	
-			            }
+		            if (km < 0.01 || km > 1000000) {
+		            	
+		            	System.out.println("Veuillez saisir une valeur en km comprise entre 0,01 et 1000000 :");
+		            	
+		            	saisie_utilisateur = sc.nextLine();
+		            	
+		            } else {
+		            	
+		            	miles = km/1.609;
+		            	
+		            	System.out.println(km + " kilomètres valent : "+ miles + " miles");
+		            	
+		            }
 		        }
 		 } 
 		sc.close();
