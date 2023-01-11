@@ -33,6 +33,8 @@ public class App {
 		    
 		    System.out.println("Le nombre d'occurrences de la lettre '" + target + "' est : " + count);
 		}
+		
+		scanner.close();
 	}
 
 }
