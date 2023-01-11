@@ -31,7 +31,7 @@ public class App {
 		int nombre2; // déclaration d'une variable nommée "nombre2" et de type "entier"
 		double moyenne; // déclaration d'une variable "moyenne" de type "réel double précision"
 		
-		// création d'un scnner (voir le PDF JAVA 03)
+		// création d'un scanner (voir le PDF JAVA 03)
 		Scanner sc = new Scanner(System.in); // permet de lire les saisies utilisateur
 		
 		// DEBUT PROGRAMME

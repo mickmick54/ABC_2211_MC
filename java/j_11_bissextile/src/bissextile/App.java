@@ -18,8 +18,11 @@ public class App {
 		System.out.println("Vous avez saisi : " + a);
 		
 			if ((a % 100 != 0) && (a % 4 == 0) || a % 400 == 0) {
+				
 				System.out.println("Cette année est bissextile");
+				
 			} else {
+				
 				System.out.println("Cette année n'est pas bissextile");
 			}	
 			
