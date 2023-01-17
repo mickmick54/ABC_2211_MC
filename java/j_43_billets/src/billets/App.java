@@ -6,7 +6,6 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// TUTO DE RIEN
 		
 		int euro500=0, euro200=0, euro100=0, euro50=0, euro20=0, euro10=0, euro5=0, euro2=0, euro1=0;
 		int nombre = 0;
