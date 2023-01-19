@@ -38,6 +38,8 @@ public class App {
 		    System.out.println("Error 404 not found.");
 		}
 		
+		clavier.close();
+		
 	}
 	
 }
