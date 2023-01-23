@@ -35,7 +35,7 @@ public class App {
 		}
 		// boucle for de 50 à 1
 		for (int j = 50; j >= 1; j--) {
-			System.out.println(j);
+			System.out.println(i);
 		}
 		
 	}
