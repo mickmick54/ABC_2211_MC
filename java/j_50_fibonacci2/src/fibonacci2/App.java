@@ -16,7 +16,7 @@ public class App {
 	         
 	         nbr2 = nbr3;    
 	         
-	         System.out.print(" "+nbr3);  
+	         System.out.print(" " + nbr3);  
 	         
 	         displayFibonacci(c - 1);    
 	     }    
@@ -27,10 +27,10 @@ public class App {
 	     int c = 10;   
 	
 	     //print 0 and 1
-	     System.out.print(nbr1+" "+nbr2); 
+	     System.out.print(nbr1 + " " + nbr2); 
 	     
 	     //deduire 2 car 0 et 1 sont deja affiches
-	     displayFibonacci(c-2);
+	     displayFibonacci(c - 2);
 	 }  
 	
 }

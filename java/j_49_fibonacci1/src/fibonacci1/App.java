@@ -8,7 +8,7 @@ public class App {
         
         //afficher 0 et 1
         
-        System.out.print(nbr1 +" "+ nbr2);   
+        System.out.print(nbr1 + " " + nbr2);   
     
         //La boucle commence par 2 car 0 et 1 sont deja affiches
         
@@ -20,7 +20,7 @@ public class App {
             
             nbr2 = nbr3;  
             
-            System.out.print(" "+nbr3); 
+            System.out.print(" " + nbr3); 
         }    
     }
 }
