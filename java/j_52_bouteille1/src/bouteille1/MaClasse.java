@@ -1,16 +1,18 @@
-package bouteille;
+package bouteille1;
 
-public class App {
-	
-    private boolean isFull;
-    private boolean isOpen;
+public class MaClasse {
+
+	public static final int maPropriete = 0;
+
+	private static boolean isFull;
+    private static boolean isOpen;
 
     public void bottle() {
         this.isFull = true;
         this.isOpen = false;
     }
 
-    public void open() {
+    public static void open() {
         if (!isOpen) {
             isOpen = true;
             System.out.println("La bouteille est ouverte.");
@@ -19,7 +21,7 @@ public class App {
         }
     }
 
-    public void close() {
+    public static void close() {
         if (isOpen) {
             isOpen = false;
             System.out.println("La bouteille est fermée.");
@@ -28,7 +30,7 @@ public class App {
         }
     }
 
-    public void fill() {
+    public static void fill() {
         if (!isFull) {
             isFull = true;
             System.out.println("La bouteille est remplie.");
@@ -37,12 +39,12 @@ public class App {
         }
     }
 
-    public void empty() {
+    public static void empty() {
         if (isFull) {
             isFull = false;
             System.out.println("La bouteille est vidée.");
         } else {
             System.out.println("La bouteille est déjà vide.");
         }
-    }   
+    }
 }
