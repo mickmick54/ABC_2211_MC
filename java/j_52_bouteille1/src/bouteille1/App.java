@@ -49,8 +49,6 @@ public class App {
     }
 	
    public static void main(String[] args) {
-      // Création d'une instance de la classe "App"
-      App maClasse = new App();
       
       Scanner sc = new Scanner(System.in);
   	
