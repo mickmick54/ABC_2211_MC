@@ -2,9 +2,52 @@ package bouteille1;
 
 import java.util.Scanner;
 
-import bouteille1.MaClasse;
-
 public class App {
+	
+	private static boolean isFull;
+    private static boolean isOpen;
+
+    public void bottle() {
+        this.isFull = true;
+        this.isOpen = false;
+    }
+
+    public static void open() {
+        if (!isOpen) {
+            isOpen = true;
+            System.out.println("La bouteille est ouverte.");
+        } else {
+            System.out.println("La bouteille est déjà ouverte.");
+        }
+    }
+
+    public static void close() {
+        if (isOpen) {
+            isOpen = false;
+            System.out.println("La bouteille est fermée.");
+        } else {
+            System.out.println("La bouteille est déjà fermée.");
+        }
+    }
+
+    public static void fill() {
+        if (!isFull) {
+            isFull = true;
+            System.out.println("La bouteille est remplie.");
+        } else {
+            System.out.println("La bouteille est déjà remplie.");
+        }
+    }
+
+    public static void empty() {
+        if (isFull) {
+            isFull = false;
+            System.out.println("La bouteille est vidée.");
+        } else {
+            System.out.println("La bouteille est déjà vide.");
+        }
+    }
+	
    public static void main(String[] args) {
       // Création d'une instance de la classe "App"
       App maClasse = new App();
@@ -17,19 +60,19 @@ public class App {
   	  
   	  if (action == 1) {
   		  
-  		  MaClasse.open();
+  		  open();
   		  
 	  } else if (action == 2) {
 		  
-		  MaClasse.close();
+		  close();
   		  
 	  } else if (action == 3) {
 		  
-		  MaClasse.fill();
+		  fill();
   		  
 	  } else if (action == 4) {
 		  
-		  MaClasse.empty();
+		  empty();
 		  
 	  } else {
 		  
