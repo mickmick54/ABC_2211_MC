@@ -82,29 +82,32 @@ public class App {
   	  
 	  // stock de bouteilles
   	  
-	  Bouteille eauPetillante = new Bouteille("plastique", 0.5f, "verte");
-	  Bouteille whisky = new Bouteille("verre", 1.5f, "transparent");
-	  Bouteille the = new Bouteille("aluminium", 1f, "metalisé");
-
+	  Bouteille eauPetillante = new Bouteille("eau petillante","plastique", 0.5f, "verte");
+	  Bouteille whisky = new Bouteille("whisky", "verre", 1.5f, "transparent");
+	  Bouteille the = new Bouteille("thé", "aluminium", 1f, "metalisé");
+	  Bouteille vin = new Bouteille("vin", "verre", 1.25f, "rouge");
+	  
 	  Bouteille[] stock = new Bouteille[1];
 	  
 	  stock[0] = eauPetillante;
 	  
 	  // étendre la taille du tableau
-	  stock = Arrays.copyOf(stock, stock.length + 2);
+	  stock = Arrays.copyOf(stock, stock.length + 3);
 
 	  // ajouter les nouveaux éléments
 	  stock[1] = whisky;
 	  stock[2] = the;
+	  stock[3] = vin;
 
 	  int index = 0;
 
 	  // System.out.println("Le stock est de : " + Arrays.toString(stock) + " bouteilles");
 	  System.out.println("Le stock est de : " + stock.length + " bouteilles");
 	  //System.out.println(whisky.toString());
-	  System.out.println("Matériau : " + whisky.getMaterial());
-	  System.out.println("Contenance : " + whisky.getCapacity() + "L");
-	  System.out.println("Couleur : " + whisky.getColor());
+	  System.out.println("Catégorie : " + vin.getName());
+	  System.out.println("Matériau : " + vin.getMaterial());
+	  System.out.println("Contenance : " + vin.getCapacity() + "L");
+	  System.out.println("Couleur : " + vin.getColor());
 
    }
 }
