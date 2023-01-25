@@ -99,8 +99,6 @@ public class App {
 	  stock[2] = the;
 	  stock[3] = vin;
 
-	  int index = 0;
-
 	  // System.out.println("Le stock est de : " + Arrays.toString(stock) + " bouteilles");
 	  System.out.println("Le stock est de : " + stock.length + " bouteilles");
 	  //System.out.println(whisky.toString());
@@ -108,7 +106,8 @@ public class App {
 	  System.out.println("Matériau : " + vin.getMaterial());
 	  System.out.println("Contenance : " + vin.getCapacity() + "L");
 	  System.out.println("Couleur : " + vin.getColor());
-
+	  
+	  sc.close();
    }
 }
 
