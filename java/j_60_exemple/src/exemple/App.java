@@ -40,6 +40,8 @@ public class App {
 		saisie4 = sc.nextInt();
 		
 		afficherResultat(saisie3, saisie4);
+		
+		sc.close();
 	}
 
 }

@@ -24,8 +24,6 @@ public class App {
 		int top = trouveNombreGrand(tab);
 		
 		System.out.println("Le plus grand nombre est : " + top);
-
-
+		
 	}
-
 }
