@@ -17,23 +17,42 @@ public class App {
 		FIN
 	*/
 	
-	private static int annee;
+	public static boolean estBissextile(int annee) {
+		
+	    if (annee % 400 == 0) {
+	    	
+	        return true;
+	        
+	    } else if (annee % 100 == 0) {
+	    	
+	        return false;
+	        
+	    } else if (annee % 4 == 0) {
+	    	
+	        return true;
+	        
+	    } else {
+	    	
+	        return false;
+	    }
+	}
+
 	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Introduisez l'année :");
+		System.out.println("Donnez une année :");
 		
-		App.annee = sc.nextInt();
+		int annee = sc.nextInt();
 		
-		if (annee % 4 == 0 && ((annee % 100 > 0) || (annee % 400 == 0))) {
+		if (estBissextile(annee)) {
 			
-			System.out.println("L'année " + annee + " est bissextile.");
-			
+		    System.out.println(annee + " est bissextile.");
+		    
 		} else {
 			
-			System.out.println("L'année " + annee + " n'est pas bissextile.");
+		    System.out.println(annee + " n'est pas bissextile.");
 		}
 		
 		sc.close();
