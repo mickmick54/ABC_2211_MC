@@ -40,16 +40,33 @@ public class App {
 		
 		c = sc.nextDouble();
 		
-		p = perimetre(a, b, c);
-		
-		area = aire(a, b, c, p);
-        
-        System.out.println("Perimetre: " + p);
-        
-        System.out.println("Aire: " + area);
+		if (isValidTriangle(a, b, c)) {
+			
+		    p = perimetre(a, b, c);
+		    
+		    area = aire(a, b, c, p);
+		    
+		    System.out.println("Perimetre: " + p);
+		    
+		    System.out.println("Aire: " + area);
+		    
+		} else {
+			
+		    System.out.println("Les côtés saisis ne forment pas un triangle valide");
+		}
         
         sc.close();
 
+	}
+	
+	public static boolean isValidTriangle(double a, double b, double c) {
+		
+	    if (a + b > c && a + c > b && b + c > a) {
+	    	
+	        return true;
+	    }
+	    
+	    return false;
 	}
 	
 	public static double perimetre(double a, double b, double c) {
