@@ -13,14 +13,22 @@ public class App {
     b = TEMP
     FIN
     */
+	
+	public static int a;
+	public static int b;
+	public static int tmp;
+
+	public void classNombres(int a, int b, int tmp) {
+		
+		App.a = a;
+		
+		App.b = b;
+		
+		App.tmp = tmp;
+	
+	}
 
 	public static void main(String[] args) {
-		
-		int a = 0;
-		
-		int b = 0;
-		
-		int tmp = 0;
 		
         Scanner sc = new Scanner(System.in);
 		
@@ -34,13 +42,15 @@ public class App {
 		
 		b = sc.nextInt();
 		
-		int temp = a;
+		tmp = a;
 		
 	    a = b;
 	    
-	    b = temp;
+	    b = tmp;
 	    
 	    System.out.println(a + " " + b);
+	    
+	    sc.close();
 	}
 
 }

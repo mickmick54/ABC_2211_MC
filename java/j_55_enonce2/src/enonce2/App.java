@@ -2,6 +2,8 @@ package enonce2;
 
 import java.lang.Math;
 
+import java.util.Scanner;
+
 public class App {
 
 	/*
@@ -14,22 +16,53 @@ public class App {
 	Appeler la procédure triangle(3, 4, 5)
 	
 	*/
+	
+	private static double a;
+	private static double b;
+	private static double c;
+	private static double p;
+	private static double area;
+
+	public void classVariables(double a, double b, double c, double p, double area) {
+		
+		App.a = a;
+		
+		App.b = b;
+        
+		App.c = c;
+        
+		App.p = perimetre(a, b, c);
+        
+        App.area = aire(a, b, c, p);
+	
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		double a = 3;
+		Scanner sc = new Scanner(System.in);
 		
-        double b = 4;
-        
-        double c = 5;
-        
-        double p = perimetre(a, b, c);
-        
-        double area = aire(a, b, c, p);
+		System.out.println("Saisir le coté a");
+		
+		a = sc.nextDouble();
+		
+		System.out.println("Saisir le coté b");
+		
+		b = sc.nextDouble();
+		
+		System.out.println("Saisir le coté c");
+		
+		c = sc.nextDouble();
+		
+		p = perimetre(a, b, c);
+		
+		area = aire(a, b, c, p);
         
         System.out.println("Perimetre: " + p);
         
-        System.out.println("Aire: " + area);	
+        System.out.println("Aire: " + area);
+        
+        sc.close();
+
 	}
 	
 	public static double perimetre(double a, double b, double c) {
