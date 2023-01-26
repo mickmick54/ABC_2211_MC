@@ -18,12 +18,6 @@ public class App {
 	*/
 	
 	private static int annee;
-
-	public void classVariables(int annee) {
-		
-		App.annee = annee;
-	
-	}
 	
 	public static void main(String[] args) {
 		

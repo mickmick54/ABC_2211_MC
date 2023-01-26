@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class App {
 	
+	private static int a;
+	private static int b;
+	private static int tmp;
+
 	/*
 	 * 
 	VARIABLES a, b
@@ -14,18 +18,14 @@ public class App {
     FIN
     */
 	
-	public static int a;
-	public static int b;
-	public static int tmp;
-
-	public void classNombres(int a, int b, int tmp) {
+	public static void inversion() {
 		
-		App.a = a;
+		tmp = a;
 		
-		App.b = b;
+	    a = b;
+	    
+	    b = tmp;
 		
-		App.tmp = tmp;
-	
 	}
 
 	public static void main(String[] args) {
@@ -42,11 +42,7 @@ public class App {
 		
 		b = sc.nextInt();
 		
-		tmp = a;
-		
-	    a = b;
-	    
-	    b = tmp;
+		inversion();
 	    
 	    System.out.println(a + " " + b);
 	    

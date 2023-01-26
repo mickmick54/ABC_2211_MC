@@ -24,16 +24,6 @@ public class App {
 	private static int n2;
 	private static double moyenne;
 
-	public void classVariables(int n1, int n2, double moyenne) {
-		
-		App.n1 = n1;
-		
-		App.n2 = n2;
-        
-		App.moyenne = moyenne;
-	
-	}
-
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

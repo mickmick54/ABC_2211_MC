@@ -23,19 +23,6 @@ public class App {
 	private static double p;
 	private static double area;
 
-	public void classVariables(double a, double b, double c, double p, double area) {
-		
-		App.a = a;
-		
-		App.b = b;
-        
-		App.c = c;
-        
-		App.p = perimetre(a, b, c);
-        
-        App.area = aire(a, b, c, p);
-	
-	}
 	
 	public static void main(String[] args) {
 		
