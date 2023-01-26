@@ -44,15 +44,15 @@ public class App {
 		
 		System.out.println("Donnez une année :");
 		
-		int annee = sc.nextInt();
+		int entree = sc.nextInt();
 		
-		if (estBissextile(annee)) {
+		if (estBissextile(entree)) {
 			
-		    System.out.println(annee + " est bissextile.");
+		    System.out.println(entree + " est bissextile.");
 		    
 		} else {
 			
-		    System.out.println(annee + " n'est pas bissextile.");
+		    System.out.println(entree + " n'est pas bissextile.");
 		}
 		
 		sc.close();
