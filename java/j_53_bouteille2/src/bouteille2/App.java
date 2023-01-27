@@ -107,46 +107,49 @@ public class App {
 	  stock[2] = the;
 	  stock[3] = vin;
 	  
-	  if (action == 1) {
-		  
-		  System.out.println("Le stock est de : " + stock.length + " bouteilles");
-		  System.out.println("Catégorie : " + the.getName());
-		  System.out.println("Matériau : " + the.getMaterial());
-		  System.out.println("Contenance : " + the.getCapacity() + "L");
-		  System.out.println("Couleur : " + the.getColor());
-		  
-	  } else if (action == 2) {
-		  
-		  System.out.println("Le stock est de : " + stock.length + " bouteilles");
-		  System.out.println("Catégorie : " + whisky.getName());
-		  System.out.println("Matériau : " + whisky.getMaterial());
-		  System.out.println("Contenance : " + whisky.getCapacity() + "L");
-		  System.out.println("Couleur : " + whisky.getColor());
-		  
-	  } else if (action == 3) {
-		  
-		  System.out.println("Le stock est de : " + stock.length + " bouteilles");
-		  System.out.println("Catégorie : " + eauPetillante.getName());
-		  System.out.println("Matériau : " + eauPetillante.getMaterial());
-		  System.out.println("Contenance : " + eauPetillante.getCapacity() + "L");
-		  System.out.println("Couleur : " + eauPetillante.getColor());
-		  
-	  } else if (action == 4) {
-		  
-		  System.out.println("Le stock est de : " + stock.length + " bouteilles");
-		  System.out.println("Catégorie : " + vin.getName());
-		  System.out.println("Matériau : " + vin.getMaterial());
-		  System.out.println("Contenance : " + vin.getCapacity() + "L");
-		  System.out.println("Couleur : " + vin.getColor());
-		  
-	  } else {
-		  
-		  System.out.println("Veuillez absolument entrez une valeur entre 1, 2, 3 et 4 :");
-		  
-		  action = sc.nextInt();
+	  while(true) {
+
+		  	   if (action == 1) {
+				  
+				  System.out.println("Le stock est de : " + stock.length + " bouteilles");
+				  System.out.println("Catégorie : " + the.getName());
+				  System.out.println("Matériau : " + the.getMaterial());
+				  System.out.println("Contenance : " + the.getCapacity() + "L");
+				  System.out.println("Couleur : " + the.getColor());
+				  
+			  } else if (action == 2) {
+				  
+				  System.out.println("Le stock est de : " + stock.length + " bouteilles");
+				  System.out.println("Catégorie : " + whisky.getName());
+				  System.out.println("Matériau : " + whisky.getMaterial());
+				  System.out.println("Contenance : " + whisky.getCapacity() + "L");
+				  System.out.println("Couleur : " + whisky.getColor());
+				  
+			  } else if (action == 3) {
+				  
+				  System.out.println("Le stock est de : " + stock.length + " bouteilles");
+				  System.out.println("Catégorie : " + eauPetillante.getName());
+				  System.out.println("Matériau : " + eauPetillante.getMaterial());
+				  System.out.println("Contenance : " + eauPetillante.getCapacity() + "L");
+				  System.out.println("Couleur : " + eauPetillante.getColor());
+				  
+			  } else if (action == 4) {
+				  
+				  System.out.println("Le stock est de : " + stock.length + " bouteilles");
+				  System.out.println("Catégorie : " + vin.getName());
+				  System.out.println("Matériau : " + vin.getMaterial());
+				  System.out.println("Contenance : " + vin.getCapacity() + "L");
+				  System.out.println("Couleur : " + vin.getColor());
+				  
+			  } else {
+				  
+				  System.out.println("Veuillez absolument entrez une valeur entre 1, 2, 3 et 4 :");
+				  continue;
+			  }
+		  	   break;
 	  }
 
-	  // System.out.println("Le stock est de : " + Arrays.toString(stock) + " bouteilles");
+	  //System.out.println("Le stock est de : " + Arrays.toString(stock) + " bouteilles");
 	  //System.out.println("Le stock est de : " + stock.length + " bouteilles");
 	  //System.out.println(whisky.toString());
 	  //System.out.println("Catégorie : " + the.getName());
