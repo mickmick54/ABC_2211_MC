@@ -145,9 +145,34 @@ public class App {
 				  
 				  System.out.println("Veuillez absolument entrez une valeur entre 1, 2, 3 et 4 :");
 				  continue;
+				  
 			  }
 		  	   break;
 	  }
+	  
+	  // Un code modifié qui utilise un tableau pour stocker les valeurs valides :
+	  
+	  int[] validValues = {1, 2, 3, 4};
+	  int action1;
+	  while(true) {
+	      System.out.println("Entrez une valeur entre 1, 2, 3 et 4 :");
+	      action1 = sc.nextInt();
+	      if (Arrays.binarySearch(validValues, action1) >= 0) {
+	          break;
+	      }
+	      System.out.println("Veuillez entrez une valeur entre 1, 2, 3 et 4 :");
+	  }
+
+	  if (action1 == 1) {
+	      open();
+	  } else if (action1 == 2) {
+	      close();
+	  } else if (action1 == 3) {
+	      fill();
+	  } else if (action1 == 4) {
+	      empty();
+	  }
+	  
 
 	  //System.out.println("Le stock est de : " + Arrays.toString(stock) + " bouteilles");
 	  //System.out.println("Le stock est de : " + stock.length + " bouteilles");
