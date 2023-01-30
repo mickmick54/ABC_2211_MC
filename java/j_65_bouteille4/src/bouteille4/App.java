@@ -56,6 +56,13 @@ public class App {
         }
     }
     
+    public static void openAndClose() {
+        open();
+        if(isFull) {
+            close();
+        }
+    }
+    
     public void organize() {
         open();
         fill();
