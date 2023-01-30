@@ -71,8 +71,6 @@ public class App {
         int action = sc.nextInt();
 
         while (true) {
-            System.out.println("Entrez une valeur entre 1, 2, 3 et 4 :");
-            action = sc.nextInt();
 
             if (action == 1) {
                 open();
