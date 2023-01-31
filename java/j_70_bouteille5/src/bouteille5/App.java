@@ -51,10 +51,10 @@ public class App {
         }
     }
 
-    public static boolean remplir(double quantiteEnL) {
-        if (estOuverte && contenanceEnL + quantiteEnL <= capaciteEnL) {
-            contenanceEnL += quantiteEnL;
-            System.out.println("La bouteille " + nom + " est remplie avec " + quantiteEnL + "L.");
+    public static boolean remplir(double contenanceEnL ) {
+        if (estOuverte && contenanceEnL <= capaciteEnL) {
+            contenanceEnL = 1.5;
+            System.out.println("La bouteille " + nom + " est remplie avec " + contenanceEnL + "L.");
             return true;
         } else {
             System.out.println("La bouteille " + nom + " est déjà remplie ou non ouverte.");
@@ -73,9 +73,9 @@ public class App {
         }
     }
 
-    public static boolean vider(double quantiteEnL) {
-        if (estOuverte && contenanceEnL - quantiteEnL >= 0) {
-            contenanceEnL -= quantiteEnL;
+    public static boolean vider(double contenanceEnL) {
+        if (estOuverte && contenanceEnL >= 0) {
+            contenanceEnL = 0;
             System.out.println("La bouteille " + nom + " est vidée.");
             return true;
         } else {
