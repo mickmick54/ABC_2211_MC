@@ -4,41 +4,17 @@ public class App {
 
 	public static void main(String[] args) {
 	
-		porte b = new porte();
+		PorteDeGarage porte = new PorteDeGarage();
 		
-		System.out.println(b.toString());
+		System.out.println(porte.toString());
 		
-		App app = new App();
-        app.ouvert();
-        System.out.println("State: " + app.getEtat());
-        app.ferme();
-        System.out.println("State: " + app.getEtat());
-        app.verrouille();
-        System.out.println("State: " + app.getEtat());
-        app.partiellementOuvert();
-        System.out.println("State: " + app.getEtat());
-        
-	    
-	    }
-
-	private void partiellementOuvert() {
-		return;
+		porte.ouvrir();
+        System.out.println("État: " + porte.getEtat());
+        porte.fermer();
+        System.out.println("État: " + porte.getEtat());
+        porte.verrouiller();
+        System.out.println("État: " + porte.getEtat());
+        porte.ouvrirPartiellement();
+        System.out.println("État: " + porte.getEtat());
 	}
-
-	private void verrouille() {
-		return;
-	}
-
-	private void ferme() {
-		return;
-	}
-
-	private String getEtat() {
-		return porte.getState();
-	}
-
-	private void ouvert() {
-		
-	}
-
 }
