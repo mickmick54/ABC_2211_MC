@@ -9,8 +9,8 @@ public class App {
         this.behavior = "Manuel";
     }
 
-    public void open() {
-    	unlock();
+    public void ouvert() {
+    	deverouille();
         if (behavior.equals("Automatique")) {
             System.out.println("La porte de garage s'ouvre automatiquement");
         }
@@ -18,7 +18,7 @@ public class App {
         System.out.println("Le statut actuel est : " + state);
     }
 
-    public void close() {
+    public void ferme() {
         if (behavior.equals("Automatique")) {
             System.out.println("La porte de garage se ferme automatiquement");
         }
@@ -26,40 +26,40 @@ public class App {
         System.out.println("Le statut actuel est : " + state);
     }
 
-    public void lock() {
+    public void verrouille() {
         this.state = "Verrouillée";
     }
 
-    public void unlock() {
+    public void deverouille() {
         this.state = "Déverrouillée";
     }
 
-    public void partiallyOpen() {
+    public void partiellementOuvert() {
         this.state = "Partiellement ouverte";
     }
 
-    public void setBehavior(String behavior) {
+    public void setComportement(String behavior) {
         this.behavior = behavior;
     }
 
-    public String getState() {
+    public String getEtat() {
         return state;
     }
 
-    public String getBehavior() {
+    public String getComportement() {
         return behavior;
     }
 
     public static void main(String[] args) {
         App app = new App();
-        app.open();
-        System.out.println("State: " + app.getState());
-        app.close();
-        System.out.println("State: " + app.getState());
-        app.lock();
-        System.out.println("State: " + app.getState());
-        app.partiallyOpen();
-        System.out.println("State: " + app.getState());
+        app.ouvert();
+        System.out.println("State: " + app.getEtat());
+        app.ferme();
+        System.out.println("State: " + app.getEtat());
+        app.verrouille();
+        System.out.println("State: " + app.getEtat());
+        app.partiellementOuvert();
+        System.out.println("State: " + app.getEtat());
     }
 }
 
