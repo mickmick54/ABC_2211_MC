@@ -85,21 +85,6 @@ public class PorteDeGarage {
 	}
 	
 	// fermer
-	/*
-	public boolean fermer(int degreOuvertureRetiree) {
-		if (
-			this.verrouille
-			&& degreOuvertureRetiree > 0
-			&& this.degreOuverture + degreOuvertureRetiree <= this.DEGREMAX
-				) {
-			this.degreOuverture += degreOuvertureRetiree;
-			return true;
-		} else {
-			return false;
-		}
-	}*/
-	
-	// fermer
 	
 	public boolean fermer(int degreOuvertureRetiree) {
 		if (
