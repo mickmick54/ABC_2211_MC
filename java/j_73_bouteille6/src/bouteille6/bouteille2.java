@@ -34,22 +34,52 @@ public class bouteille2 {
 
 		}
 	}
-	
+
 	public boolean fermer() {
 		if (this.estOuverte) {
 			this.estOuverte = false;
 			return true;
-		}else {
+		} else {
 			return false;
-			
+
 		}
 	}
-	
+
 	public boolean remplirTout() {
-		if(this.estOuverte) {
-			if(this.contenanceEnL<this.capaciteEnL) {
+		if (this.estOuverte) {
+			if (this.contenanceEnL < this.capaciteEnL) {
 				this.contenanceEnL = this.capaciteEnL;
 				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}
+	}
+
+	public boolean remplir(double quantiteEnL) {
+		double plein = quantiteEnL + this.contenanceEnL;
+		if (this.estOuverte) {
+			if(plein<=capaciteEnL) {
+				contenanceEnL = plein;
+				return true;
+			}
+			else {
+				return false;
+			}
+
+		} else {
+			return false;
+		}
+
+	}
+	
+	public boolean viderTout() {
+		if(estOuverte) {
+			if(contenanceEnL >0 ) {
+				contenanceEnL =0;
+				return true; 
 			}
 			else {
 				return false;
@@ -60,19 +90,26 @@ public class bouteille2 {
 		}
 	}
 	
-	public boolean remplir (double quantiteEnL) {
-		double plein = quantiteEnL + this.contenanceEnL;
-		if (this.estOuverte) {
-			contenanceEnL = plein;
-			return true;
-		} else {
+	public boolean  vider(double quantiteEnL) {
+		if(this.estOuverte) {
+			if(quantiteEnL > 0) {
+				if(this.contenanceEnL - quantiteEnL >= 0) {
+					this.contenanceEnL = this.contenanceEnL - quantiteEnL;
+					//this.contenanceEnL -= quantiteEnL;
+					return true;
+				}else {
+					return  false;
+				}
+			}else {
+				return false;
+			}
+		}else {
 			return false;
 		}
-			
-		}
+	}
 
 	@Override
 	public String toString() {
-		return "Nom " + nom + " Contenant " +contenanceEnL+ " Capcite " + capaciteEnL + " est Ouverte " + estOuverte;
+		return "Nom " + nom + " Contenant " + contenanceEnL + " Capcite " + capaciteEnL + " est Ouverte " + estOuverte;
 	}
 }
