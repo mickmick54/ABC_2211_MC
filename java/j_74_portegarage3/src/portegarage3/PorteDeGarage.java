@@ -67,10 +67,12 @@ public class PorteDeGarage {
 		}
 	}
 	
-	// Ouvrir d'un certain degré
+	// Ouvrir
 	
 	public boolean ouvrir(int degreOuvertureAjoutee) {
-		if (degreOuvertureAjoutee > 0
+		if (
+			!this.verrouille
+			&& degreOuvertureAjoutee > 0
 			&& this.degreOuverture + degreOuvertureAjoutee <= this.DEGREMAX	
 			
 				) {
