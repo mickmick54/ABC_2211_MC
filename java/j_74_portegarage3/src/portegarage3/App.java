@@ -18,10 +18,10 @@ public class App {
 		//Boolean ouvertPartielCrm = crm.partiellementOuverte() ; 
 		
 		// test verrouiller
-		 //Boolean verrou = crm.verrouiller();
+		Boolean verrou = crm.verrouiller();
 		
 		// test deverouiller
-		Boolean verrou = crm.deverrouiller();
+		Boolean deverrou = crm.deverrouiller();
 		
 		int i =0;
 	}

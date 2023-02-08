@@ -67,6 +67,22 @@ public class PorteDeGarage {
 		}
 	}
 	
+	// Ouvrir d'un certain degré
+	
+	public boolean ouvrir(int degreOuvertureAjoutee) {
+		if (degreOuvertureAjoutee > 0
+			&& this.degreOuverture + degreOuvertureAjoutee <= this.DEGREMAX	
+			
+				) {
+			this.degreOuverture += degreOuvertureAjoutee;
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
+	
+	
 	
 	
 	
