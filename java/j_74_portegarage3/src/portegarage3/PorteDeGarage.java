@@ -55,6 +55,18 @@ public class PorteDeGarage {
 		}
 	}
 	
+	// Deverrouiller
+	
+	public boolean deverrouiller() {
+		if (this.degreOuverture == 0 && this.verrouille == true) {
+			this.verrouille = true;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 	
 	
 	

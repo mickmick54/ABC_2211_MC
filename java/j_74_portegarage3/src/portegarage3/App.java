@@ -15,12 +15,13 @@ public class App {
 		
 		// test ouverture partielle	
 	//	Boolean ouvertPartielAbcd = abcd.partiellementOuverte();
-		Boolean ouvertPartielCrm = crm.partiellementOuverte() ; 
+		//Boolean ouvertPartielCrm = crm.partiellementOuverte() ; 
 		
 		// test verrouiller
-		Boolean verrou = crm.verrouiller();
+		 //Boolean verrou = crm.verrouiller();
 		
-		
+		// test deverouiller
+		Boolean verrou = crm.deverrouiller();
 		
 		int i =0;
 	}
