@@ -28,8 +28,13 @@ public class App {
 		System.out.println(aReussiAOuvrir);
 		System.out.println(crm);
 		
-		Boolean aReussiAOuvrir2 = crm.ouvrir(95);
-		System.out.println(aReussiAOuvrir2);
+		//Boolean aReussiAOuvrir2 = crm.ouvrir(90);
+		//System.out.println(aReussiAOuvrir2);
+		//System.out.println(crm);
+		
+		// test fermeture
+		Boolean aReussiAFermer = crm.fermer(45);
+		System.out.println(aReussiAFermer);
 		System.out.println(crm);
 		
 		int i = 0;

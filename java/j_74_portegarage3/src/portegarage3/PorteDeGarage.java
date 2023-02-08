@@ -72,7 +72,7 @@ public class PorteDeGarage {
 	public boolean ouvrir(int degreOuvertureAjoutee) {
 		if (
 			!this.verrouille
-			&& degreOuvertureAjoutee > 0
+			&& degreOuvertureAjoutee < 90
 			&& this.degreOuverture + degreOuvertureAjoutee <= this.DEGREMAX	
 			
 				) {
@@ -84,10 +84,41 @@ public class PorteDeGarage {
 		
 	}
 	
+	// fermer
+	/*
+	public boolean fermer(int degreOuvertureRetiree) {
+		if (
+			this.verrouille
+			&& degreOuvertureRetiree > 0
+			&& this.degreOuverture + degreOuvertureRetiree <= this.DEGREMAX
+				) {
+			this.degreOuverture += degreOuvertureRetiree;
+			return true;
+		} else {
+			return false;
+		}
+	}*/
 	
+	// fermer
 	
+	public boolean fermer(int degreOuvertureRetiree) {
+		if (
+			!this.verrouille
+			&& degreOuvertureRetiree > 0
+			&& this.degreOuverture - degreOuvertureRetiree >= this.DEGREMIN
+				) {
+			this.degreOuverture -= degreOuvertureRetiree;
+			if (this.degreOuverture == 0) {
+				this.verrouille = true;
+			}
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	
-	
+
 	
 	
 	// to String ------------------------
@@ -95,7 +126,7 @@ public class PorteDeGarage {
 	
 	public String toString() {
 		
-		return "Non Porte de Garage : "+this.MARQUE+"\r\n"
+		return "Nom Porte de Garage : "+this.MARQUE+"\r\n"
 				+"degré ouverture : "+this.degreOuverture+"\r\n"
 				+"Degré maxi : "+this.DEGREMAX+"\r\n"
 				+"Degré min : "+this.DEGREMIN+"\r\n"
