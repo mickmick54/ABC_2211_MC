@@ -87,5 +87,10 @@ public class Ascenseur {
         System.out.println("Nombre de personnes : " + this.nbPersonnes);
         System.out.println("Porte ouverte : " + (this.porteOuverte ? "oui" : "non"));
     }
+
+	public String getEtageActuel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
