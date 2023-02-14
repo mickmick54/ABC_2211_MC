@@ -89,8 +89,7 @@ public class Ascenseur {
     }
 
 	public String getEtageActuel() {
-		// TODO Auto-generated method stub
-		return null;
+		return String.valueOf(this.etageActuel);
 	}
 }
 
