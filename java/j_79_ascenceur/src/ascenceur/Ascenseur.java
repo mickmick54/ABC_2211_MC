@@ -1,7 +1,5 @@
 package ascenceur;
 
-import java.util.Scanner;
-
 public class Ascenseur {
     private int etageActuel;
     private int capaciteMax;
