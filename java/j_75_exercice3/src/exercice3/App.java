@@ -35,9 +35,13 @@ public class App {
 	}
 	
 	public static boolean estDivisible(int a, int b) {
+		
 	    if (a % b == 0) {
+	    	
 	        return true;
+	        
 	    } else {
+	    	
 	        return false;
 	    }
 	}
