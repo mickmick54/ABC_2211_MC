@@ -29,6 +29,7 @@ public class App {
 		// Afficher la représentation en chaîne de caractères du robot
 		System.out.println(robot.toString());
 
+		Manette.main(args);
 	}
 
 }
