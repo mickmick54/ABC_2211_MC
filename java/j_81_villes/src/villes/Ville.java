@@ -19,6 +19,9 @@ public class Ville {
 	public int getNbHabitants() {
 		return nbHabitants;
 	}
+	public char getCategories() {
+		return categories;
+	}
 	
 	// Mutateurs
 	public void setNom(String pNom) {
@@ -29,6 +32,7 @@ public class Ville {
 	}
 	public void setNbHabitants(int nbre) {
 		nbHabitants = nbre;
+		this.setcategorie();
 	}
 		
 	// constructeur par défaut
@@ -37,6 +41,7 @@ public class Ville {
 		nomVille = "inconnu";
 		nomPays = "inconnu";
 		nbHabitants = 0;
+		this.setcategorie();
 	}
 	
 	// constructeur classique avec paramètres
@@ -47,5 +52,6 @@ public class Ville {
 		nomVille = pNom;
 		nomPays = pNomPays;
 		nbHabitants = nbre;
+		this.setcategorie();
 	}
 }
