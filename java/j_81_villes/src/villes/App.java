@@ -21,6 +21,8 @@ public class App {
 		Ville ville2 = new Ville("Mulhouse", 108038, "France");
 		
 		System.out.println("\n ville = "+ville.getNom()+" ville de"+ville.getNbHabitants()+" habitant(s) se situant en "+ville.getNomPays());
+		System.out.println("\n ville1 = "+ville1.getNom()+" ville de"+ville1.getNbHabitants()+" habitant(s) se situant en "+ville1.getNomPays());
+		System.out.println("\n ville1 = "+ville2.getNom()+" ville de"+ville2.getNbHabitants()+" habitant(s) se situant en "+ville2.getNomPays());
 	}
 
 }
