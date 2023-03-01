@@ -37,6 +37,11 @@ public class App {
 		ville2.setNom("New York");
 		System.out.println("\n ville1 = "+ville1.getNom()+" ville de "+ville1.getNbHabitants()+" habitant(s) se situant en "+ville1.getNomPays());
 		System.out.println("\n ville1 = "+ville2.getNom()+" ville de "+ville2.getNbHabitants()+" habitant(s) se situant en "+ville2.getNomPays());
+		
+		System.out.println("\n\n"+ville1.decrisToi());
+		System.out.println(ville.decrisToi());
+		System.out.println(ville2.decrisToi()+"\n\n");
+		System.out.println(ville1.comparer(ville2));
 	}
 
 }
