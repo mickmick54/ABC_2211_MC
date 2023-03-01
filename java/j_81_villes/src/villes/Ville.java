@@ -8,6 +8,7 @@ public class Ville {
 	private String nomPays;
 	// stocke le nombre d'habitant de la ville
 	private int nbHabitants;	
+	// stocke la categorie de la ville
 	private char categories;
 	
 	// Accesseurs
