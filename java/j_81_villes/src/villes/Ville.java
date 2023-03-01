@@ -54,4 +54,18 @@ public class Ville {
 		nbHabitants = nbre;
 		this.setcategorie();
 	}
+	
+	// Définit la categorie de la ville
+	private void setcategorie( ) {
+		int bornesSuperieurs [] = {0, 1000, 10000, 100000, 500000, 1000000, 5000000, 10000000};
+		char categories [] = {'?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};
+		
+		int i = 0;
+		
+		while (i < bornesSuperieurs.length && this.nbHabitants > bornesSuperieurs[i]) {
+			i++;
+		}
+		this.categories = categories[i];
+	}
+	
 }
