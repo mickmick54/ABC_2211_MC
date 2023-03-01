@@ -8,6 +8,7 @@ public class Ville {
 	private String nomPays;
 	// stocke le nombre d'habitant de la ville
 	private int nbHabitants;	
+	private char categories;
 	
 	// Accesseurs
 	public String getNom() {
@@ -66,6 +67,28 @@ public class Ville {
 			i++;
 		}
 		this.categories = categories[i];
+	}
+	
+	// Retourne la description de la ville
+	public String decrisToi() {
+		return "\t" +this.nomVille+" est une ville de "
+					+this.nomPays
+					+" elle comporte : "
+					+this.nbHabitants
+					+" habitant(s) => elle est donc de categorie : "
+					+this.categories;
+	}
+	
+	// Retourne une chaine de caractères selon le résultat de la comparaison
+	public String comparer(Ville v1) {
+		String str = new String();
+		
+		if(v1.getNbHabitants() > this.nbHabitants) {
+			str = v1.getNom()+" est plus peuplée que "+this.nomVille;
+		} else {
+			str = this.nomVille+" est plus peuplée que "+v1.getNom();
+		}
+		return str;
 	}
 	
 }
